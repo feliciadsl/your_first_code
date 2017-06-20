@@ -108,6 +108,7 @@ int main(void)
 
 	/* %r - reverse */
 	_printf("%r", "abcdefghijklmnopqrstuvwxyz");
+	_printf(“%r__%_%“);
 
 	return (0);
 }
