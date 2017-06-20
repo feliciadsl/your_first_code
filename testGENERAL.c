@@ -41,6 +41,10 @@ int main(void)
 	printf("String:[%s]\n", a);
 	_printf("String:1234567890 1234567890 1234567890 1234567890 qwertyuiop[]\asdfghjkl;'zxcvbnm,./`1234567890-=~!@#$%^&*()_+\{}:?><");
 	printf("String:1234567890 1234567890 1234567890 1234567890 qwertyuiop[]\asdfghjkl;'zxcvbnm,./`1234567890-=~!@#$%^&*()_+\{}:?><");
+	_printf("% s", "hello");
+	printf("% s", "hello");
+        _printf("%  s", "hello");
+        printf("%  s", "hello");
 	/* Also check length of strings */
 
 	/* %% - percent sign */
@@ -70,7 +74,8 @@ int main(void)
 	printf("Negative:[%d]\n", -762534);
         _printf("Len:[%d]\n", len);
         printf("Len:[%d]\n", len2);
-
+	_printf("%d %d", 10);
+	printf("%d %d", 10);
         /* %u - unsigned int */
         ui = (unsigned int)INT_MAX + 1024;
 	_printf("Unsigned:[%u]\n", ui);
